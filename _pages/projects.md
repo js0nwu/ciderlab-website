@@ -3,7 +3,8 @@ layout: page
 title: projects
 permalink: /projects/
 description: Ongoing and completed research efforts from CIDER Lab.
-nav: true
+nav: false
+published: false
 nav_order: 1
 horizontal: false
 ---

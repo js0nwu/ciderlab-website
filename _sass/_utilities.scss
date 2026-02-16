@@ -603,3 +603,41 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+
+// Square-corner pass (remove rounded rectangles across the theme)
+.card,
+.btn,
+.dropdown-menu,
+.newsletter-form-input,
+.bibsearch-form-input,
+.newsletter-form-button,
+.newsletter-loading-button,
+.calendar-toggle-btn,
+.popover,
+#nav-search-input,
+.nav-search-results,
+.cider-btn,
+.cider-hero__visual,
+.cider-hero__media,
+.cider-stat-card,
+.cider-pillar-card,
+.cider-panel,
+.course-item,
+a.btncv,
+span.badge-toc,
+pre,
+code,
+d-article details,
+.code-display-wrapper .copy,
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  border-radius: 0 !important;
+}
+
+.rounded:not(.rounded-circle),
+.rounded-sm:not(.rounded-circle),
+.rounded-lg:not(.rounded-circle),
+.rounded-pill {
+  border-radius: 0 !important;
+}

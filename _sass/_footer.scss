@@ -4,6 +4,8 @@
 
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
+  border-top: 2px solid var(--global-footer-border-color);
+  box-shadow: 0 -10px 24px var(--global-footer-shadow-color);
   font-size: 0.75rem;
 
   .container {
@@ -25,11 +27,22 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  font-size: 0.82rem;
+  background-color: transparent;
 
   .container {
+    color: var(--global-text-color-light);
     text-align: center;
+  }
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
   }
 }

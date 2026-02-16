@@ -1,0 +1,67 @@
+/*******************************************************************************
+ * Global radius reset (force square corners site-wide)
+ ******************************************************************************/
+
+:root {
+  --bs-border-radius: 0;
+  --bs-border-radius-sm: 0;
+  --bs-border-radius-lg: 0;
+  --bs-border-radius-xl: 0;
+  --bs-border-radius-xxl: 0;
+  --bs-border-radius-pill: 0;
+}
+
+body
+  :where(
+    .btn,
+    .card,
+    .dropdown-menu,
+    .form-control,
+    .input-group-text,
+    .badge,
+    .alert,
+    .popover,
+    .tooltip-inner,
+    .navbar,
+    .navbar .nav-link,
+    .navbar-brand,
+    .nav-search-wrap,
+    #nav-search-input,
+    .nav-search-results,
+    .nav-search-option,
+    .profile,
+    .profile img,
+    figure,
+    picture,
+    img,
+    .cider-btn,
+    .cider-hero__visual,
+    .cider-hero__media,
+    .cider-stat-card,
+    .cider-pillar-card,
+    .cider-panel,
+    .course-item,
+    .newsletter-form-input,
+    .bibsearch-form-input,
+    .newsletter-form-button,
+    .newsletter-loading-button,
+    pre,
+    code,
+    textarea,
+    select,
+    input
+  ) {
+  border-radius: 0 !important;
+}
+
+.rounded,
+.rounded-sm,
+.rounded-lg,
+.rounded-pill {
+  border-radius: 0 !important;
+}
+
+.rounded-circle,
+.rounded-circle * {
+  border-radius: 50% !important;
+}

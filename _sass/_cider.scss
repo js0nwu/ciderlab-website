@@ -1,0 +1,240 @@
+/*******************************************************************************
+ * CIDER home custom layout
+ ******************************************************************************/
+
+.cider-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1rem 0 2rem 0;
+}
+
+.cider-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.45rem;
+}
+
+.cider-title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin-bottom: 0.65rem;
+}
+
+.cider-lead {
+  font-size: 1.08rem;
+  max-width: 58ch;
+}
+
+.cider-cta-group {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.cider-btn {
+  display: inline-block;
+  padding: 0.56rem 1rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition:
+    transform 0.22s ease,
+    background-color 0.22s ease,
+    color 0.22s ease;
+}
+
+.cider-btn:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.cider-btn--primary {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color) !important;
+}
+
+.cider-btn--primary:hover {
+  background: var(--global-hover-color);
+  color: var(--global-hover-text-color) !important;
+}
+
+.cider-hero__visual {
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent !important;
+  box-shadow: none;
+  justify-self: end;
+  width: min(100%, 40rem);
+}
+
+.cider-hero__media {
+  max-height: none;
+  overflow: hidden;
+  border-radius: 2px;
+  background: transparent !important;
+}
+
+.cider-hero__media figure,
+.cider-hero__media picture {
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+
+.cider-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: transparent !important;
+  transform: scale(1.03);
+  transform-origin: center 50%;
+}
+
+.cider-hero__caption {
+  margin: 0.75rem 0 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.cider-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.4rem 0 2rem 0;
+}
+
+.cider-stat-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background: var(--global-card-bg-color);
+  padding: 0.8rem 0.95rem;
+}
+
+.cider-stat-card__value {
+  margin: 0;
+  font-family: var(--global-heading-font);
+  font-size: 1.22rem;
+  font-weight: 700;
+}
+
+.cider-stat-card__label {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.84rem;
+  color: var(--global-text-color-light);
+}
+
+.cider-section {
+  margin: 2rem 0;
+}
+
+.cider-pillars {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cider-pillar-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background: var(--global-card-bg-color);
+  padding: 1rem;
+}
+
+.cider-pillar-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.05rem;
+}
+
+.cider-pillar-card p {
+  margin: 0;
+  font-size: 0.93rem;
+}
+
+.cider-split {
+  margin: 2rem 0 0.5rem 0;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 0.9rem;
+}
+
+.cider-panel {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background: var(--global-card-bg-color);
+  padding: 1rem;
+}
+
+.cider-panel h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.cider-panel--accent {
+  background: color-mix(in srgb, var(--global-theme-color) 10%, var(--global-card-bg-color));
+}
+
+.cider-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.cider-list li {
+  margin-bottom: 0.4rem;
+}
+
+.cider-text-link {
+  font-weight: 650;
+}
+
+.cider-hero,
+.cider-stats,
+.cider-pillars,
+.cider-split {
+  animation: cider-rise 0.6s ease both;
+}
+
+@keyframes cider-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .cider-hero,
+  .cider-split {
+    grid-template-columns: 1fr;
+  }
+
+  .cider-hero__visual {
+    justify-self: start;
+    width: min(100%, 34rem);
+  }
+
+  .cider-hero__img {
+    transform: scale(1.01);
+  }
+}
+
+@media (max-width: 700px) {
+  .cider-pillars,
+  .cider-stats {
+    grid-template-columns: 1fr;
+  }
+}

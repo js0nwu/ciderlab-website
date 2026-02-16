@@ -4,10 +4,21 @@
 
 @use "variables" as v;
 
+html {
+  // Keep content x-position stable between short and long pages.
+  scrollbar-gutter: stable both-edges;
+  overflow-y: scroll;
+}
+
 body {
   padding-bottom: 70px;
+  font-family: var(--global-body-font);
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  background-image: var(--global-bg-pattern);
+  background-attachment: fixed;
+  letter-spacing: 0.005em;
+  line-height: 1.7;
 
   h1,
   h2,
@@ -20,17 +31,37 @@ body {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
+  // Add offset for fixed navbar height.
   padding-top: 57px;
 }
 
 body.sticky-bottom-footer {
-  // Remove padding below footer.
+  // Keep footer at the viewport bottom when content is short.
   padding-bottom: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.sticky-bottom-footer > .container[role="main"] {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+body.sticky-bottom-footer > footer.sticky-bottom {
+  margin-top: auto;
 }
 
 .container {
   max-width: v.$max-content-width;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.page-content > article {
+  margin: 0;
 }
 
 // Profile

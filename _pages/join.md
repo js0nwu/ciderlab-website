@@ -7,18 +7,15 @@ nav: true
 nav_order: 5
 ---
 
-CIDER Lab is recruiting students and collaborators for projects in computational interaction, accessibility, and human-centered AI.
+Are you excited to work at the intersection of HCI and machine learning, on topics like computational interaction, user interface modeling, human-AI interaction, technical HCI, and accessibility? Join us at the CIDER Lab!
 
-## Openings
+## Prospective PhD Students
 
-- **PhD students:** applicants interested in HCI + AI research.
-- **Undergraduate researchers:** semester-long research projects.
-- **Collaborators:** cross-disciplinary academic and industry partnerships.
+PhD admissions are handled through the Purdue Department of Computer Science. Please apply through the official admissions process:
+[https://www.cs.purdue.edu/graduate/admission/steps.html](https://www.cs.purdue.edu/graduate/admission/steps.html).
+If you apply, please mention Jason Wu in your application.
 
-## How to Apply
+## Are you at Purdue?
 
-Email `jasonwu@purdue.edu` with:
-
-- CV
-- brief research statement
-- links to relevant work (papers, code, portfolio)
+If you are currently at Purdue and interested in working with CIDER Lab, reach out to Jason Wu at `jasonwu@purdue.edu` with your research interests, background, coursework, and any interesting projects you've done.
+We can support research through both credit opportunities and paid positions.

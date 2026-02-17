@@ -91,6 +91,60 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.profiles-page .profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, max-content));
+  gap: 1.4rem 1.8rem;
+  align-items: start;
+}
+
+.profiles-page .profile.profile-card {
+  float: none !important;
+  margin: 0 !important;
+  width: 10.5rem;
+}
+
+.profiles-page .profile figure,
+.profiles-page .profile picture,
+.profiles-page .profile img {
+  width: 10.5rem !important;
+  height: 10.5rem !important;
+}
+
+.profiles-page .profile img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50% !important;
+}
+
+.profiles-page .profile .more-info {
+  margin-top: 0.45rem;
+}
+
+.profiles-page .profile .more-info p {
+  display: block;
+  margin: 0;
+}
+
+.profiles-page .profile .more-info .member-name {
+  font-weight: 700;
+}
+
+.profiles-page .profile .more-info .member-role {
+  margin-top: 0.12rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.profiles-page .profile .more-info .member-affiliation {
+  margin-top: 0.12rem;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.01em;
+}
+
 // CV
 
 .cv {

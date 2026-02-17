@@ -42,4 +42,11 @@ profiles:
     link: https://longjieguo.github.io/
     role: PhD Collaborator
     affiliation: University of Washington
+  - align: left
+    image: people/donghoon.png
+    image_circular: true
+    name: Donghoon Shin
+    link: https://donghoon.io/
+    role: PhD Collaborator
+    affiliation: University of Washington
 ---

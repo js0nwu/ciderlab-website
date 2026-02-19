@@ -5,9 +5,13 @@
 @use "variables" as v;
 
 html {
-  // Keep content x-position stable between short and long pages.
-  scrollbar-gutter: stable both-edges;
-  overflow-y: scroll;
+  // Keep content x-position stable between short and long pages
+  // without forcing a mirrored left gutter on desktop.
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+  background-color: var(--global-bg-color);
+  background-image: var(--global-bg-pattern);
+  background-attachment: fixed;
 }
 
 body {

@@ -154,7 +154,16 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% assign normalized_booktitle = entry.booktitle | strip %}
+      {% assign booktitle_prefix = normalized_booktitle | slice: 0, 3 | downcase %}
+      {% if booktitle_prefix == 'in ' %}
+        {% assign normalized_booktitle = normalized_booktitle | slice: 3, normalized_booktitle.size %}
+        {% assign booktitle_prefix = normalized_booktitle | slice: 0, 3 | downcase %}
+        {% if booktitle_prefix == 'in ' %}
+          {% assign normalized_booktitle = normalized_booktitle | slice: 3, normalized_booktitle.size %}
+        {% endif %}
+      {% endif %}
+      {% capture entrytype %}<em>In {{ normalized_booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}

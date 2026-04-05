@@ -98,6 +98,17 @@ ul.task-list input[type="checkbox"] {
   align-items: start;
 }
 
+.profiles-page .profiles-section + .profiles-section {
+  margin-top: 2rem;
+}
+
+.profiles-page .profiles-section__title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 1.35rem;
+}
+
 .profiles-page .profile.profile-card {
   float: none !important;
   margin: 0 !important;

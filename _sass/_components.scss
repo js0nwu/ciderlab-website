@@ -112,14 +112,14 @@ ul.task-list input[type="checkbox"] {
 .profiles-page .profile.profile-card {
   float: none !important;
   margin: 0 !important;
-  width: 10.5rem;
+  width: 11.5rem;
 }
 
 .profiles-page .profile figure,
 .profiles-page .profile picture,
 .profiles-page .profile img {
-  width: 10.5rem !important;
-  height: 10.5rem !important;
+  width: 11.5rem !important;
+  height: 11.5rem !important;
 }
 
 .profiles-page .profile img {
@@ -144,7 +144,8 @@ ul.task-list input[type="checkbox"] {
 
 .profiles-page .profile .more-info .member-role {
   margin-top: 0.12rem;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
+  line-height: 1.25;
   font-weight: 600;
   color: var(--global-text-color);
 }

@@ -21,7 +21,7 @@ profile_sections:
       - align: left
         image: people/james.png
         image_circular: true
-        name: James Qian Sun
+        name: James Qiao Sun
         link: https://www.linkedin.com/in/jamesqsun/
         role: Undergraduate Researcher
         affiliation: Purdue University
@@ -46,7 +46,13 @@ profile_sections:
         link: https://www.linkedin.com/in/sdas44/
         role: Undergraduate Researcher
         affiliation: Purdue University
-  - title: PhD Collaborators
+      - align: left
+        image: people/aiden.jpg
+        image_circular: true
+        name: Aiden Moy
+        role: Undergraduate Researcher
+        affiliation: Purdue University
+  - title: Collaborators
     profiles:
       - align: left
         image: people/yihao.png
@@ -76,4 +82,10 @@ profile_sections:
         link: https://donghoon.io/
         role: PhD Collaborator
         affiliation: University of Washington
+      - align: left
+        image: people/ziying.jpg
+        image_circular: true
+        name: Ziying Wang
+        role: Undergraduate Collaborator
+        affiliation: Duke Kunshan University
 ---

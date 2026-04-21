@@ -16,6 +16,43 @@ profile_sections:
         link: https://jasonwu.cc
         role: Assistant Professor
         affiliation: Purdue University
+  - title: PhD Students
+    profiles:
+      - align: left
+        image: people/jiawen.jpg
+        image_circular: true
+        name: Jiawen Li
+        link: https://jiawen-lee.github.io/JiawenLi/
+        role: PhD Student
+        affiliation: Purdue University
+      - align: left
+        image: people/hyewon.png
+        image_circular: true
+        name: Hyewon Lee
+        link: https://www.hyewon.me/
+        role: PhD Student
+        affiliation: Purdue University
+      - align: left
+        image: people/dan.jpg
+        image_circular: true
+        name: Dan (Hojun) Yoo
+        link: https://yhjboong.github.io/
+        role: PhD Student
+        affiliation: Purdue University
+      - align: left
+        image: people/zijie.png
+        image_circular: true
+        name: Zijie Zhou
+        link: https://www.linkedin.com/in/zijie-zhou-a46845251/
+        role: PhD Student
+        affiliation: Purdue University
+      - align: left
+        image: people/jun.jpg
+        image_circular: true
+        name: Jun Cha
+        link: https://junhyeokcha.com/
+        role: PhD Student
+        affiliation: Purdue University
   - title: Purdue Undergraduates
     profiles:
       - align: left
@@ -50,6 +87,13 @@ profile_sections:
         image: people/aiden.jpg
         image_circular: true
         name: Aiden Moy
+        role: Undergraduate Researcher
+        affiliation: Purdue University
+      - align: left
+        image: people/shaheer.jpg
+        image_circular: true
+        name: Shaheer Raza
+        link: https://www.linkedin.com/in/shaheer-raza-710259265
         role: Undergraduate Researcher
         affiliation: Purdue University
   - title: Collaborators
